@@ -1,4 +1,6 @@
-PSUF-venv/ 
+PSUF-venv/
+PSUF1/data/
+
 # Python build/cache
 __pycache__/
 *.py[cod]

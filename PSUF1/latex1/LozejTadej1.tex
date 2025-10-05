@@ -34,6 +34,78 @@ Asistent: Jan Gavranovič
 
 \pagenumbering{arabic}
 
-\section{Navodilo naloge}
+\section{Uvod}
+
+Iskanje signala v veliki količini podatkov je velik izziv, saj so le-ti praviloma težko ločljivi od dominantnih procesov ozadja. Pomembno je, da kinematično porazdelitev ozadja čim bolj natančno opišemo, da ga lahko nato odštejemo od podatkov. Na ta način nam nato ostane le možen iskani signal.
+
+Pri opisu procesov ozadja si pomagamo z regresijo ('fitom', parametrizacijo) kinematičnih porazdelitev, ki nas zanimajo. Postopek regresije ozadja izhaja ali iz simuliranih porazdelitev ali iz predpostavljenih funkcijskih oblik, ki jih poskušamo prilagoditi podatkom v kinematičnem območju porazdelitve, kjer signala ne pričakujemo in jih nato ekstrapoliramo v signalno območje.
+
+Metode regresije so danes pomemben element metod strojnega učenja, kjer poskušamo iz omenjene količine podatkov izvleči čim več informacij o samem procesu.
+
+V dani nalogi bomo obravnavali meritev eksperimenta ATLAS, kjer so iskali redek razpad Higgsovega bozona v dva miona $(H \rightarrow \mu^+ \mu^-)$. Ogledali si bomo kinematično porazdelitev dogodkov po rekonstruirani invariantni masi dveh izbranih mionov $(m_{\mu\mu})$. Glavni proces ozdaja je razpad šibkega bozona $(Z \rightarrow \mu^+ \mu^-)$, ki prispeva
+resonančno porazdelitev z vrhom pri $m_Z = 91 \, \text{GeV}$, kjer pa se rep invariantne mase razširi tudi precej nad maso Higgsovega bozona $m_H = 125 \, \text{GeV}$. Ta proces ozadja je za več velikostnih redov dogodkov večji, kot jih pričakujemo iz signalnega razpada Higgsovega bozona. K ozadju v manjši meri prispevajo tudi drugi procesi.
+
+Za to nalogo so na razpolago simulirani in izmerjeni dogodki kolaboracije ATLAS. V primeru simulacij so dogodki uteženi tako, da je vsota uteži enaka pričakovani vrednosti števila izmerjenih dogodkov za vključene procese $(\sum wt = N_{proc})$. Celotna statistična napaka je $\sigma = \sqrt{\sum wt^2}$. To za simulacijo pomeni, da napaka ni Poissonova.
+
+Signal lahko za potrebe določitve ozadja omejimo na primer na območje [$120 \, \text{Gev}$, $130 \, \text{GeV}$]. Na voljo imamo cel šop metod za ustrezno določitev ozadja
+
+\begin{itemize}
+    \item Polinom dovolj nizkega reda.
+    \item Bolj sofisticirane funkcije (mBW)
+    \item Support Vectom Machines (SVM) metode z različnimi jedri in regulizatorji
+    \item Uporabimo gaussovske procese (Gaussian Process Regression, GPR) z različnimi jedri
+    \item  Uporabimo dekompozicijo na ortogonalne polinome
+\end{itemize}
+
+Za parametrizacijo signala se tipično uporabi Crystal Ball (CB) funkcija.
+
+\section{Navodila in usmeritve}
+
+\begin{enumerate}
+    \item Iz surovih podatkov zgeneriraj svoje histograme s pomočjo predpripravljene skripte \texttt{create\_histograms.py}, pri kateri lahko spreminjaš število predalov in $m_{\mu \mu}$ interval, ki ga boš opazoval/-a. Histogrami (mejne in sredinske $x$ vrednosti predalov, vrednosti in napake) se shranijo v formatu \texttt{.npz}.
+    \item Ko imaš zgenerirane svoje histograme, jih lahko izrišeš s pomočjo skripte \texttt{visualize\_data.py} (ustrezno s točko spremeni ime datotek, ki jih nalagaš).
+    \item Preveri, če imaš napake res pravilno upoštevane. Lahko jih namenoma pokvariš, in ponoviš prva dva koraka, da vidiš vpliv.
+    \item Da se spoznaš z osnovnim fitanjem, najprej zgladi histogram simuliranega ozadja s pomočjo preprostejših matematičnih funkcij in nadaljuj do različnih teoretično podkrepljenih nastavkov. Dobiš funkcijo $m(x_k)$.
+    \item Prilagodi funkcijo CB histogramu simuliranega signala, pri čemer upoštevaj še dodatni normalizacijski faktor. Dobiš funkcijo $s(x_k)$.
+    \item Ker simulacija ozadja ni vedno najboljša, se po navadi za oceno ozadja vzame izmerjene podatke, pri čemer pa je potrebno izključiti območje, kjer pričakujemo signal. Prilagodi torej funkcijo histogramu podatkov, da dobiš dobro oceno za ozadje in pri tem pazi, da pri fitu ne upoštevaš območja okrog mase Higgsovega bozona. Dobiš funkcijo $b(x_k)$.
+    \item Od podatkov odštej čimbolj zglajeno ozadje, ki si ga dobil v prejšnji točki, da dobiš ekstrahiran signal $y(x_k)$.
+    \item Na ekstrahiran signal fitaj CB funkcijo s prostimi parametri, ki si jih dobil v točki 5. tako, da ji v resnici prilagodiš le nov normalizacijski faktor $\alpha_{norm} \cdot s(x_k)$.
+    \item Ker je izmerjenega signala še zelo malo, predlagamo, da postopek najprej narediš z umetno napihnjenim signalom - le tega množi s faktorjem $\gamma = 100$ in ga dodaj podatkom $d_{new}(x_k) = d(x_k) + \gamma s(x_k)$. Ker bo ta signal na ta način lepo izstopal iz ozadja, ga boš lažje izluščil.
+\end{enumerate}
+
+\section{Podatki}
+
+Za začetek si oglejmo realne podatke, ki jih imamo v datoteki \texttt{data.h5}. V tej datoteki imamo na voljo 106148612 dogodkov. Na sliki \ref{fig:data} imamo histogram z 100 000 predalčki med minimalno in maksimalno vrednostjo invariantne mase dogodkov. Na levi osi vidimo absolutno število dogodkov pri določenem predalčku invariantne mase na desni osi pa relativno število dogodkov. Na manjše je prikazan tuki histogram v široki okolici mase Higgsovega bozona $m_H = 125 \, \text{GeV}$. Vidimo visok vrh pri razpadu šibkega bozona pri invariantni masi $m_Z = 91 \, \text{GeV}$. Vrh Higgsovega bozona na histogramu ni niti viden.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/data.png}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{data.h5}.
+    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
+    invariantne mase Higgsovega bozona.}
+    \label{fig:data}
+\end{figure}
+
+Na sliki \ref{fig:mc_bkg} je prikazana porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}. Na voljo imamo 311281902 dogodkov. Razporedil sem jih v 50 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj ozadje procesa. Vsak dogodek je utežen in zato smo pri risanju histograma morali biti na to pozorni in dogodek šteti sladno z njegovo utežjo. Kot na prejšnjem grafu sta tudi tukaj leva in desna os grafa absolutno ter relativno število dogodkov. Vidimo, da je histogram na prvi pogled precej podoben. Na manjše imamo kot prej prikazan histogram v širši okolici invariantne mase Higgsovega bozona.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/mc_bkg.png}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}.
+    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
+    invariantne mase Higgsovega bozona.}
+    \label{fig:mc_bkg}
+\end{figure}
+
+Na sliki \ref{fig:mc_sig} lahko vidimo porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}. Na voljo imamo 5498243 dogodkov. Razporedil sem jih v 10 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj signal procesa t. j. razpad Higgsovega bozona. Enako kot prej imamo na levi ter desni absolutno ter relativno preštete dogodke v predalčkih invariantnih mas. Vidimo, da je tovrstnih dogodkov precej malo. Na manjšem grafu z rdečo vidimo histogram v širši okolici invariantne mase Higgsovega bozona.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/mc_sig.png}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}.
+    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
+    invariantne mase Higgsovega bozona.}
+    \label{fig:mc_sig}
+\end{figure}
 
 \end{document}
