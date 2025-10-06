@@ -1,5 +1,6 @@
 \documentclass[slovene,11pt,a4paper]{article}
-\usepackage[margin=1.8cm,bottom=3cm,foot=1.5cm]{geometry}
+
+\usepackage[margin=1.5cm,bottom=3cm,foot=1.5cm]{geometry}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{float}
@@ -11,6 +12,7 @@
 \usepackage{hyperref}
 \usepackage[version=4]{mhchem}
 \usepackage[slovene]{babel}
+
 \pagenumbering{gobble}
 
 \begin{document}
@@ -80,32 +82,39 @@ Za začetek si oglejmo realne podatke, ki jih imamo v datoteki \texttt{data.h5}.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{imgs/data.png}
-    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{data.h5}.
-    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
-    invariantne mase Higgsovega bozona.}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{data.h5}. Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici invariantne mase Higgsovega bozona.}
     \label{fig:data}
 \end{figure}
-
-Na sliki \ref{fig:mc_bkg} je prikazana porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}. Na voljo imamo 311281902 dogodkov. Razporedil sem jih v 50 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj ozadje procesa. Vsak dogodek je utežen in zato smo pri risanju histograma morali biti na to pozorni in dogodek šteti sladno z njegovo utežjo. Kot na prejšnjem grafu sta tudi tukaj leva in desna os grafa absolutno ter relativno število dogodkov. Vidimo, da je histogram na prvi pogled precej podoben. Na manjše imamo kot prej prikazan histogram v širši okolici invariantne mase Higgsovega bozona.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{imgs/mc_bkg.png}
-    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}.
-    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
-    invariantne mase Higgsovega bozona.}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}. Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici invariantne mase Higgsovega bozona.}
     \label{fig:mc_bkg}
 \end{figure}
-
-Na sliki \ref{fig:mc_sig} lahko vidimo porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}. Na voljo imamo 5498243 dogodkov. Razporedil sem jih v 10 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj signal procesa t. j. razpad Higgsovega bozona. Enako kot prej imamo na levi ter desni absolutno ter relativno preštete dogodke v predalčkih invariantnih mas. Vidimo, da je tovrstnih dogodkov precej malo. Na manjšem grafu z rdečo vidimo histogram v širši okolici invariantne mase Higgsovega bozona.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\linewidth]{imgs/mc_sig.png}
-    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}.
-    Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici
-    invariantne mase Higgsovega bozona.}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}. Na levi osi je absolutna skala na desni pa relativna. Na manjše je prikazan histogram v okolici invariantne mase Higgsovega bozona.}
     \label{fig:mc_sig}
 \end{figure}
+
+Na sliki \ref{fig:mc_bkg} je prikazana porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_bkg.h5}. Na voljo imamo 311281902 dogodkov. Razporedil sem jih v 50 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj ozadje procesa. Vsak dogodek je utežen in zato smo pri risanju histograma morali biti na to pozorni in dogodek šteti sladno z njegovo utežjo. Kot na prejšnjem grafu sta tudi tukaj leva in desna os grafa absolutno ter relativno število dogodkov. Vidimo, da je histogram na prvi pogled precej podoben. Na manjše imamo kot prej prikazan histogram v širši okolici invariantne mase Higgsovega bozona.
+
+Na sliki \ref{fig:mc_sig} lahko vidimo porazdelitev invariantne mase dveh mionov iz datoteke \texttt{mc\_sig.h5}. Na voljo imamo 5498243 dogodkov. Razporedil sem jih v 10 000 enako velikih predalčkov med minimalno in maksimalno invariantno maso. Te podatke so pridobili s pomočjo Monte Carlo simulacije. Simulirali so zgolj signal procesa t. j. razpad Higgsovega bozona. Enako kot prej imamo na levi ter desni absolutno ter relativno preštete dogodke v predalčkih invariantnih mas. Vidimo, da je tovrstnih dogodkov precej malo. Na manjšem grafu z rdečo vidimo histogram v širši okolici invariantne mase Higgsovega bozona.
+
+Na sliki \ref{fig:my_hist} je prikazan histogram generiran s funkcijo \texttt{make\_histograms} in narisan s funkcijo \linebreak \texttt{visualize\_histograms}. Vidimo porazdelitev invariantne mase dveh mionov v merjenih podatkih (Data), simuliranem ozadju (Ozadje) ter simuliranem signalu (Signal). Na spodnjem histogramu lahko vidimo razmerje med številom merjenih dogodkov ter simuliranih dogodkov v ozadju.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/my_hist.png}
+    \caption{Histogam porazdelitve invariantne mase dveh mionov izvseh treh datotek. Spodaj je prikazano razmerje med merjenimi podatki ter simuliranim ozadjem.}
+    \label{fig:my_hist}
+\end{figure}
+
+\section{Glajenje ozadja}
+
+Osredotočimo se na simulirano ozadje iz datoteke \texttt{mc\_sig.h5}. Z različnimi funkcijami bomo poskusili čimbolje opisati ozadje na intervalu prikazanem na sliki \ref{fig:my_hist}.
 
 \end{document}

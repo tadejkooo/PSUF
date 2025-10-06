@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759675302.65336 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1759675303.99252 0
+["pdflatex"] 1759695210.13188 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1759695211.73497 0
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759656240 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1754578253 12668 450c1c5906f4aa8e508d116796ba0e5f ""
   "C:/Users/tadej/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1754508274 24225045 72b8236a96125cb016d2d8f33d774bec ""
@@ -106,14 +106,15 @@
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "LozejTadej1.aux" 1759675303 2456 b142ec993bdb622b41ab07eb53cfffab "pdflatex"
-  "LozejTadej1.out" 1759675303 295 ba34dddb501f542661703186b8f471aa "pdflatex"
-  "LozejTadej1.tex" 1759675302 8529 a9d0454b64d93e35c2ef2a7c525d2dbe ""
-  "LozejTadej1.toc" 1759675303 230 0f85b563ceaf6662ce49ed08c04ca558 "pdflatex"
-  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1759675302 8529 a9d0454b64d93e35c2ef2a7c525d2dbe ""
+  "LozejTadej1.aux" 1759695211 3033 2dc8173279cbd7a7ad4978e62b0c31ba "pdflatex"
+  "LozejTadej1.out" 1759695211 416 e4d0beaac438b4f04b42482621a660f6 "pdflatex"
+  "LozejTadej1.tex" 1759695209 9430 f60e7ff093a1ab37768b9ee5ba0e5cdb ""
+  "LozejTadej1.toc" 1759695211 301 54e7fb0d18c9c9273748e845f7cee285 "pdflatex"
+  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1759695209 9430 f60e7ff093a1ab37768b9ee5ba0e5cdb ""
   "imgs/data.png" 1759673277 54874 3ff8da3707d9da865baa864676006768 ""
   "imgs/mc_bkg.png" 1759675110 51198 b48aae0eb1205248587507e20f52ee7d ""
   "imgs/mc_sig.png" 1759675212 56497 b3fb29ef41a0d973c3c916e24ced7847 ""
+  "imgs/my_hist.png" 1759692766 34607 ddb0ad7cfff52c79f47072d5b82063e5 ""
   (generated)
   "LozejTadej1.aux"
   "LozejTadej1.log"

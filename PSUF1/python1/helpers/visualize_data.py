@@ -57,6 +57,7 @@ def visualize_histograms(
     sigs = pldict["Signal"][2]
     serrs = pldict["Signal"][3]
 
+    ax1.set_title('Porazdelitev invariantne mase dveh mionov')
     ax1.errorbar(xs, ys, xerr=xerrs, yerr=yerrs, fmt=".", color=color_data, markersize=2)
     ax1.hist(xs, xedges, weights=bkgs, histtype="step", color=color_background)
     ax1.hist(xs, xedges, weights=sigs, histtype="step", color=color_signal)
@@ -64,12 +65,12 @@ def visualize_histograms(
 
     # Fine control over labels - histograms as lines, data with marker only...
     siglab = mlines.Line2D([], [], color=color_signal, markersize=10, label="Signal")
-    bkglab = mlines.Line2D([], [], color=color_background, markersize=10, label="Background")
+    bkglab = mlines.Line2D([], [], color=color_background, markersize=10, label="Ozadje")
     dlab = mlines.Line2D([], [], color=color_data, marker=".", lw=0, markersize=10, label="Data")
 
     ax1.legend(handles=[siglab, bkglab, dlab], loc="upper right", frameon=0, bbox_to_anchor=(0.95, yloc))
 
-    ax1.set_ylabel("Events/bin")
+    ax1.set_ylabel("Število dogodkov / bin")
     ax1.set_xlabel(r"$m_{\mu\mu}$ [GeV]")
 
     ax1.set_xlim([xedges[0], xedges[-1]])
@@ -107,7 +108,7 @@ def visualize_histograms(
     rb = berrs / bkgs
     zerrs = zvals * np.sqrt(ry * ry + rb * rb)
     ax2.errorbar(xs, zvals, xerr=xerrs, yerr=zerrs, fmt="none", color=color_data_bkg, markersize=10)
-    ax2.set_ylabel("Data/Bkg")
+    ax2.set_ylabel("Data / Ozadje")
 
     # Fine y-label control for overlap
     finelab = ax2.yaxis.get_ticklabels()
