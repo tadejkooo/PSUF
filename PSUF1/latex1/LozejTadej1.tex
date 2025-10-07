@@ -113,8 +113,60 @@ Na sliki \ref{fig:my_hist} je prikazan histogram generiran s funkcijo \texttt{ma
     \label{fig:my_hist}
 \end{figure}
 
-\section{Glajenje ozadja}
+\section{Glajenje ozadja z analitičnimi funkcijami}
 
-Osredotočimo se na simulirano ozadje iz datoteke \texttt{mc\_sig.h5}. Z različnimi funkcijami bomo poskusili čimbolje opisati ozadje na intervalu prikazanem na sliki \ref{fig:my_hist}.
+Cilj naloge je odšteti ozadje meritvam in izluščiti signal. Za ta proces bo potrebno dobro modelirati ozadje. V tem delu naloge bomo ozadje poskušali modelirati z analitičnimi funkcijami
+
+\begin{itemize}
+    \item Polinomi različnih stopenj: $a_0 + a_1 x + a_2 x^2 + a_3 x^3 + ...$
+    \item Potenčna funkcija: $ax^b$
+    \item Eksponentna funkcija: $a_1 \exp(-b_1 x) + a_2 \exp(-b_2 x)$
+    \item Dijet funkcija: $a(1-x^d)^c x^{b_1 + b_2 \ln(x)}$
+    \item Eksponent polinoma: $a \exp(b_1 x + b_2 x^2 + b_3 x^3)$
+    \item CMS funkcija: $\exp(a_2 m + a_3 m^2) / ((m-m_Z)^{a_1} + (0.5g_Z)^{a_1})$,
+\end{itemize}
+kjer je $x$ število dogodkov, ki se pojavijo v histogramu, $m_Z$ in $g_Z$ pa lastnosti Z bozona. Vse ostalo so prosti parametri.
+
+\subsection{Simulirano ozadje}
+
+Osredotočimo se na simulirano ozadje iz datoteke \texttt{mc\_sig.h5}. Z različnimi funkcijami bomo poskusili čimbolje opisati ozadje na intervalu prikazanem na sliki \ref{fig:my_hist}. Za začetek si na sliki \ref{fig:polinomi} oglejmo različne fite polinomov na simulirano ozadje. Z različnimi barvami so  prikazane različne stopnje polinomov. V legendi poleg tega piše tudi vrednost reduciranega chi kvadrata fita $\chi^2_{red}$. To je navaden $\chi^2$ deljen s prostorskimi stopnjami modela $\nu = N-p$, kjer je $N$ število izmerjenih točk ter $p$ število prostih parametrov modela.To vrednost povezujemo z kvaliteto modela. Če je vrednost enaka 1 pomeni, da model precej dobro opiše obnašanje in tudi ni preveč prilagojen na konkreten primer. Če je vrednost manjša od 1 je bodisi naš model preveč natančen ali pa so napake meritev podcenjene. Če je vrednost večja kot 1 pa bodisi naš model ni preveč dober bodisi so napake precenjene. Vidimo, da v primeru polinomov najmanjšo vrednost zavzame polinom s stopnjo 5.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/polinomi.png}
+    \caption{Polinomi različnih stopenj prilagojeni simuliranemu ozadju. V legendi imamo za vsak model podano tudi vrednost reduciranega $\chi^2_{red}$.}
+    \label{fig:polinomi}
+\end{figure}
+
+Naprej si poglejmo še preostale analitične funkcije. Na sliki \ref{fig:modeli} lahko vidimo preostale omenjene modelske funkcije. Eksponentna in eksponent polinoma imata zelo majhno vrednost $\chi^2_{red}$. Tudi bolj teoretično podkovana funkcija CMS se precej lepo prilagaja ozadju. Program je imel težave pri ocenjevanju napak parametrov Dijet funkcije in zato tudi ni znal izračunati pripadajoče vrednosti $\chi^2_{red}$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/modeli.png}
+    \caption{Različne modelske funkcije prilagojene simuliranemu ozadju. V legendi imamo za vsak model podano tudi vrednost reduciranega $\chi^2_{red}$.}
+    \label{fig:modeli}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/najboljsi_modeli.png}
+    \caption{Napake najboljših modelskih funkcij. Zgoraj v linearni skali spodaj pa v logaritemski.}
+    \label{fig:najboljsi_modeli}
+\end{figure}
+
+Na sliki \ref{fig:najboljsi_modeli} lahko vidimo napake najboljših modelov. Vidimo, da se v območju mase Higgsovega bozona najbolje prilegata eksponent in eksponent polinoma. Nevem pa, če bi temu lahko rekli dobro prileganje... 
+
+\subsection{Simuliran signal}
+
+Za vajo lahko poskusimo prilagoditi Crystal Ball funkcijo simuliranemu signalu iz datoteke \texttt{mc\_sig.h5}. Na sliki \ref{fig:CB} lahko vidimo Crystal Ball funkcijo prilagojeno simuliranemu signalu. Spodaj lahko vidimo tudi njeno odstopanje. Prilagojena funkcija se precej dobro ujema s podatki.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/CB.png}
+    \caption{Crystal Ball funkcija prilagojena simuliranemu signalu. Sporaj je prikazano odstopanje fita od podatkov.}
+    \label{fig:CB}
+\end{figure}
+
+
 
 \end{document}

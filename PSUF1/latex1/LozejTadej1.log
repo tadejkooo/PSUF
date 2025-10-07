@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  5 OCT 2025 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  7 OCT 2025 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,12 +493,12 @@ Overfull \hbox (23.03337pt too wide) in paragraph at lines 67--68
  []
 
 [1]
-<imgs/data.png, id=55, 562.9833pt x 406.1574pt>
+<imgs/data.png, id=65, 562.9833pt x 406.1574pt>
 File: imgs/data.png Graphic file (type png)
 <use imgs/data.png>
 Package pdftex.def Info: imgs/data.png  used on input line 84.
 (pdftex.def)             Requested size: 409.72125pt x 295.5938pt.
-<imgs/mc_bkg.png, id=57, 575.2692pt x 406.1574pt>
+<imgs/mc_bkg.png, id=67, 575.2692pt x 406.1574pt>
 File: imgs/mc_bkg.png Graphic file (type png)
 <use imgs/mc_bkg.png>
 Package pdftex.def Info: imgs/mc_bkg.png  used on input line 91.
@@ -507,7 +507,7 @@ Package pdftex.def Info: imgs/mc_bkg.png  used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imgs/mc_sig.png, id=58, 575.2692pt x 406.1574pt>
+<imgs/mc_sig.png, id=68, 575.2692pt x 406.1574pt>
 File: imgs/mc_sig.png Graphic file (type png)
 <use imgs/mc_sig.png>
 Package pdftex.def Info: imgs/mc_sig.png  used on input line 98.
@@ -520,31 +520,54 @@ Underfull \hbox (badness 1314) in paragraph at lines 107--108
 []\OT1/cmr/m/n/10.95 Na sliki []4[] je pri-ka-zan hi-sto-gram ge-ne-ri-ran s funk-cijo \OT1/cmtt/m/n/10.95 make[]histograms \OT1/cmr/m/n/10.95 in na-ri-san s funk-cijo
  []
 
-<imgs/my_hist.png, id=80, 425.6703pt x 425.6703pt>
+<imgs/my_hist.png, id=90, 425.6703pt x 425.6703pt>
 File: imgs/my_hist.png Graphic file (type png)
 <use imgs/my_hist.png>
 Package pdftex.def Info: imgs/my_hist.png  used on input line 111.
 (pdftex.def)             Requested size: 409.72125pt x 409.73003pt.
-[4 <./imgs/my_hist.png>] (LozejTadej1.aux)
+[4 <./imgs/my_hist.png>]
+<imgs/polinomi.png, id=99, 509.5035pt x 408.3255pt>
+File: imgs/polinomi.png Graphic file (type png)
+<use imgs/polinomi.png>
+Package pdftex.def Info: imgs/polinomi.png  used on input line 136.
+(pdftex.def)             Requested size: 409.72125pt x 328.35555pt.
+ [5 <./imgs/polinomi.png>]
+<imgs/modeli.png, id=110, 508.7808pt x 408.3255pt>
+File: imgs/modeli.png Graphic file (type png)
+<use imgs/modeli.png>
+Package pdftex.def Info: imgs/modeli.png  used on input line 145.
+(pdftex.def)             Requested size: 409.72125pt x 328.84152pt.
+<imgs/najboljsi_modeli.png, id=111, 566.5968pt x 349.7868pt>
+File: imgs/najboljsi_modeli.png Graphic file (type png)
+<use imgs/najboljsi_modeli.png>
+Package pdftex.def Info: imgs/najboljsi_modeli.png  used on input line 152.
+(pdftex.def)             Requested size: 409.72125pt x 252.94044pt.
+ [6 <./imgs/modeli.png> <./imgs/najboljsi_modeli.png>]
+<imgs/CB.png, id=121, 516.7305pt x 518.8986pt>
+File: imgs/CB.png Graphic file (type png)
+<use imgs/CB.png>
+Package pdftex.def Info: imgs/CB.png  used on input line 165.
+(pdftex.def)             Requested size: 409.72125pt x 411.4456pt.
+ [7 <./imgs/CB.png>] (LozejTadej1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `LozejTadej1.out' has not changed.
-(rerunfilecheck)             Checksum: E4D0BEAAC438B4F04B42482621A660F6;416.
+(rerunfilecheck)             Checksum: 77F203AF22A52DAC78A104C0EE81FB09;843.
  ) 
 Here is how much of TeX's memory you used:
- 13619 strings out of 474486
- 230917 string characters out of 5743756
+ 13663 strings out of 474486
+ 231798 string characters out of 5743756
  1938542 words of memory out of 5000000
- 35697 multiletter control sequences out of 15000+600000
- 564340 words of font info for 58 fonts, out of 8000000 for 9000
+ 35732 multiletter control sequences out of 15000+600000
+ 564647 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,838b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\tadej\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on LozejTadej1.pdf (6 pages, 324149 bytes).
+ 75i,6n,79p,1148b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\tadej\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on LozejTadej1.pdf (9 pages, 520019 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
