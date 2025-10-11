@@ -167,6 +167,44 @@ Za vajo lahko poskusimo prilagoditi Crystal Ball funkcijo simuliranemu signalu i
     \label{fig:CB}
 \end{figure}
 
+\subsection{Dejanski in napihnjeni podatki}
 
+Poglejmo si sedaj še prilagajanje funkcij dejanskih podatkom iz datoteke \texttt{data.h5}. Pazizi moramo, da ne upoštevamo območja signala. Na sliki \ref{fig:BrezSignala} lahko vidimo podatke z izrezanim območjem v okolici vrha signala. Območje smo odrezali med invariantno maso $120$ ter $130 \, \text{GeV}$.
+
+Na sliki \ref{fig:RazlicniPodatki} imamo prikazane različne podatke. Z črnimi pikami vidimo podatke iz katerih smo odvzeli signalno območje. Tem bomo prilagajali naše modelske funkcije. Zelen histogram prikazuje vse podatke. Rdeč histogram prikazuje podatke iz simulacije signala pomnožene s faktorjem $\gamma = 100$. Moder histogram prikazuje podatke katerim smo prišteli umetno napihnjen simuliran signal. Tako je moder histogram v resnici zeles s prištetim rdečim. Tem podatkom bomo rekli Asimov podatki.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/BrezSignala.png}
+    \caption{Dejanski podatki brez območja signala.}
+    \label{fig:BrezSignala}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/RazlicniPodatki.png}
+    \caption{Različni podatki. Z črnimi pikami so prikazani podatki brez območja signala. Tem bomo prilagajali funkcije. Nato so pa po vrsti Napihnjen signal, Asimov podatki ter podatki.}
+    \label{fig:RazlicniPodatki}
+\end{figure}
+
+Na naslednjih dveh slikah \ref{fig:IzluscenSignalData} in \ref{fig:IzluscenSignalAsimovData} lahko vidimo funkcije ozadja narisane čez podatke ter napšihnjene podatke ter izluščen signal iz podatkov ter napihnjenih podatkov. Kot pričakovano smo več signala dobili iz podatkov z napihnjenim signalom. Izluščenim signalom sem se trudil prilagoditi CrystallBall funkcijo ampak žal neuspešno.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/IzluscenSignalData.png}
+    \caption{Funkcije prilagojene ozadju narisena čez podatke zgoraj ter izluščen signal spodaj.}
+    \label{fig:IzluscenSignalData}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/IzluscenSignalAsimovData.png}
+    \caption{Funkcije prilagojene ozadju narisena čez napihnjene podatke zgoraj ter izluščen signal spodaj.}
+    \label{fig:IzluscenSignalAsimovData}
+\end{figure}
+
+\section{Glajenje ozadja z Gaussovskimi procesi}
 
 \end{document}

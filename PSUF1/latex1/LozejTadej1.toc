@@ -5,3 +5,5 @@
 \contentsline {section}{\numberline {4}Glajenje ozadja z analitičnimi funkcijami}{4}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Simulirano ozadje}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Simuliran signal}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Dejanski in napihnjeni podatki}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Glajenje ozadja z Gaussovskimi procesi}{10}{section.5}%
