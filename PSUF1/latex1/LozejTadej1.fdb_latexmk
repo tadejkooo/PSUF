@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760193321.77742 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1760193323.8203 0
+["pdflatex"] 1760383281.5669 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1760383285.62089 0
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759656240 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1754578253 12668 450c1c5906f4aa8e508d116796ba0e5f ""
   "C:/Users/tadej/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1754508274 24225045 72b8236a96125cb016d2d8f33d774bec ""
@@ -107,11 +107,11 @@
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "LozejTadej1.aux" 1760193323 6751 d860752c347e7e1f75843f45e2374029 "pdflatex"
-  "LozejTadej1.out" 1760193323 1304 76178e2050d1451a3af02e2033e929bc "pdflatex"
-  "LozejTadej1.tex" 1760193318 15562 5b401099041e896772852c5af71298bc ""
-  "LozejTadej1.toc" 1760193323 684 a6f6bf4a245751da03889641f6bd88c1 "pdflatex"
-  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1760193318 15562 5b401099041e896772852c5af71298bc ""
+  "LozejTadej1.aux" 1760383285 6751 d860752c347e7e1f75843f45e2374029 "pdflatex"
+  "LozejTadej1.out" 1760383285 1304 76178e2050d1451a3af02e2033e929bc "pdflatex"
+  "LozejTadej1.tex" 1760383277 15564 15b18e1098d0086556b94213bfd2b158 ""
+  "LozejTadej1.toc" 1760383285 684 a6f6bf4a245751da03889641f6bd88c1 "pdflatex"
+  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1760383277 15564 15b18e1098d0086556b94213bfd2b158 ""
   "imgs/BrezSignala.png" 1760191965 22462 ade6daa7d97a2481f190144199bbfbf8 ""
   "imgs/CB.png" 1760189784 47415 c99bf5f62463f59f9e5b81060dd2c98e ""
   "imgs/IzluscenSignalAsimovData.png" 1760192909 73673 471c59ba38e9976d5ed484d02262688d ""
