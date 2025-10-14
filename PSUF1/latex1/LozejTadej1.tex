@@ -171,7 +171,7 @@ Za vajo lahko poskusimo prilagoditi Crystal Ball funkcijo simuliranemu signalu i
 
 Poglejmo si sedaj še prilagajanje funkcij dejanskih podatkom iz datoteke \texttt{data.h5}. Pazizi moramo, da ne upoštevamo območja signala. Na sliki \ref{fig:BrezSignala} lahko vidimo podatke z izrezanim območjem v okolici vrha signala. Območje smo odrezali med invariantno maso $120$ ter $130 \, \text{GeV}$.
 
-Na sliki \ref{fig:RazlicniPodatki} imamo prikazane različne podatke. Z črnimi pikami vidimo podatke iz katerih smo odvzeli signalno območje. Tem bomo prilagajali naše modelske funkcije. Zelen histogram prikazuje vse podatke. Rdeč histogram prikazuje podatke iz simulacije signala pomnožene s faktorjem $\gamma = 100$. Moder histogram prikazuje podatke katerim smo prišteli umetno napihnjen simuliran signal. Tako je moder histogram v resnici zeles s prištetim rdečim. Tem podatkom bomo rekli Asimov podatki.
+Na sliki \ref{fig:RazlicniPodatki} imamo prikazane različne podatke. Z črnimi pikami vidimo podatke iz katerih smo odvzeli signalno območje. Tem bomo prilagajali naše modelske funkcije. Zelen histogram prikazuje vse podatke. Rdeč histogram prikazuje podatke iz simulacije signala pomnožene s faktorjem $\gamma = 10$. Moder histogram prikazuje podatke katerim smo prišteli umetno napihnjen simuliran signal. Tako je moder histogram v resnici zeles s prištetim rdečim. Tem podatkom bomo rekli Asimov podatki.
 
 \begin{figure}[h!]
     \centering
@@ -207,6 +207,50 @@ Na naslednjih dveh slikah \ref{fig:IzluscenSignalData} in \ref{fig:IzluscenSigna
 
 \section{Glajenje ozadja z Gaussovskimi procesi}
 
+Ozadje lahko modeliramo tudi z Gaussovskimi procesi (GPR – Gaussian Process Regression). Gre za metodo strojnega učenja, ki je posebej uporabna, kadar imamo opravka s podatki, katerih odvisnost od spremenljivk ni znana ali jo je težko eksplicitno opisati. Metoda temelji na uporabi jedrskih funkcij (kernels), ki določajo stopnjo podobnosti med podatkovnimi točkami in s tem vplivajo na gladkost ter obliko napovedane funkcije. Z ustrezno izbiro jedra lahko izboljšamo napoved. Preizkusil sem več jeder a smiselne rezultate sem dobil le z RBF, Matern, RQ ter ExpSineSquared jedri.
 
+Prav tako moramo vhodne podatke ustrezno normalizirati, saj tako vplivamo na stabilnost in učinkovitost učenja modela. V analizi sem poreizkusil tri vrste normalizacij: standardno, min-max ter logaritemsko. S standardno normalizacijo žal iz nekega razloga nisem dobil smiselnih rezultatov, zato bom podal le rezultate dobljene z min-max ter logaritemsko normalizacijo.
+
+\subsection{Luščenje signala iz Asimov podakov}
+
+V tem podpoglavju bomo poiskusili modelirati ozadje Asimov podatkov. To so podatki, katerim umetno prištejemo signal.
+
+Enako kot pri prilagajanju analitičnih funkcij podatkom moramo iz podatkov odstraniti območje okrog invariantne mase Higgsovega bozona. Na sliki \ref{fig:RazlicniPodatki_2} lahko vidimo podake uporabljene za trening, podatke, ki v treningu niso bili uporabljeni ter predikcijo našega modela. Za primere v tem podpodpoglavju sem uporabil logaritemsko normalizacijo ter RGF jedro - enako kot na vajah.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/RazlicniPodatki_2.png}
+    \caption{S črno so prikazani podatki uporabljeni za trening, z modro so prikazani podatki, ki so iz treninga izpuščeni in z rdečo je prikazana napoved našega modela. Uporabil sem logaritemsko normalizacijo ter RBF jedro.}
+    \label{fig:RazlicniPodatki_2}
+\end{figure}
+
+Če Asimov podatkom odštejemo modelirano ozadje dobimo izluščen signal prikazan na sliki \ref{fig:IzluscenSignalAsimovData_GPR}. Oblika signala spominja na CrystallBall funkcijo.
+
+Na sliki \ref{fig:CrystallBall_izluscenega_signala} lahko z rdečo vidimo CristallBall funkcijo prilagojeno našemu izluščenemu signalu. Z modro vidimo CrystallBall funkcijo, ki je prilagojena zgolj simuliranemu signalu. S parametrom $\alpha$ lahko vidimo, kako dobro smo izluščli signal iz podatkov. Ta nam pove razmerje med izluščenim signalom in simuliranim signalom.
+
+Na sliki \ref{fig:alphas} lahko vidimo vrednosti parametra alpha za različna uporabljena jedra ter za dve različni normalizaciji podatkov. Vidimo, da se dejanskemu signalu najbolj približamo z uporabo RBF jedra ter logaritemske normalizacije ter ExpSineSquared jedra z uporabo logaritemske normalizacije. V splošnem smo z logaritemsko normalizacijo bolje izluščli signal kot z min - max noralizacijo.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/IzluscenSignalAsimovData_GPR.png}
+    \caption{Izluščen signal iz Asimov podatkov.}
+    \label{fig:IzluscenSignalAsimovData_GPR}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/CrystallBall_izluscenega_signala.png}
+    \caption{CrystallBall izluščenega signala.}
+    \label{fig:CrystallBall_izluscenega_signala}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{imgs/alphas.png}
+    \caption{CrystallBall izluščenega signala.}
+    \label{fig:alphas}
+\end{figure}
+
+\subsection{Luščenje signala iz podatkov}
 
 \end{document}
