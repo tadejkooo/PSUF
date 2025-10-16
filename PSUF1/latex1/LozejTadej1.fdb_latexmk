@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760468804.73917 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1760468807.25722 0
+["pdflatex"] 1760636954.04943 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" "LozejTadej1.pdf" "LozejTadej1" 1760636956.38191 0
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1759656240 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/tadej/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1754578253 12668 450c1c5906f4aa8e508d116796ba0e5f ""
   "C:/Users/tadej/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1754508274 24225045 72b8236a96125cb016d2d8f33d774bec ""
@@ -107,11 +107,11 @@
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "LozejTadej1.aux" 1760468806 8442 91abf7378938f13747929abe469eb14e "pdflatex"
-  "LozejTadej1.out" 1760468806 1762 9643d46724abb250e543f58d02227dc4 "pdflatex"
-  "LozejTadej1.tex" 1760468801 19134 17c96ce91a05cad635b6df7590542af6 ""
-  "LozejTadej1.toc" 1760468806 884 cd9930987cce1890a4794bb7fa1a41e0 "pdflatex"
-  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1760468801 19134 17c96ce91a05cad635b6df7590542af6 ""
+  "LozejTadej1.aux" 1760636956 8674 aea3a9833edd34c5a72eedc5231c5a86 "pdflatex"
+  "LozejTadej1.out" 1760636956 1854 fc0b7b03907797e503841ea8e48a54ba "pdflatex"
+  "LozejTadej1.tex" 1760636950 19718 edeb5e45438dfe91d47e02e0c4900c23 ""
+  "LozejTadej1.toc" 1760636956 951 e7903fd7a110dd6bd5980b089ba7feb3 "pdflatex"
+  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF1/latex1/LozejTadej1.tex" 1760636950 19718 edeb5e45438dfe91d47e02e0c4900c23 ""
   "imgs/BrezSignala.png" 1760191965 22462 ade6daa7d97a2481f190144199bbfbf8 ""
   "imgs/CB.png" 1760189784 47415 c99bf5f62463f59f9e5b81060dd2c98e ""
   "imgs/CrystallBall_izluscenega_signala.png" 1760383229 50414 2b26f2ca28bef795faee2964d24868df ""
