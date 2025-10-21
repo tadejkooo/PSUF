@@ -1,5 +1,6 @@
 PSUF-venv/
 PSUF1/data/
+PSUF2/data/
 
 # Python build/cache
 __pycache__/
