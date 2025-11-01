@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  23 OCT 2025 08:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  1 NOV 2025 20:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -472,24 +472,24 @@ Package babel Info: Importing font and identification data for slovene
 ) (PSUF_naloga2_TadejLozej_2025.aux)
 \openout1 = `PSUF_naloga2_TadejLozej_2025.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -562,13 +562,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
  (PSUF_naloga2_TadejLozej_2025.out) (PSUF_naloga2_TadejLozej_2025.out)
 \@outlinefile=\write3
 \openout3 = `PSUF_naloga2_TadejLozej_2025.out'.
 
 
-Package chemgreek Info: Activating mapping `default' on line 18.
+Package chemgreek Info: Activating mapping `default' on line 19.
 
 
 [1
@@ -583,33 +583,103 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \newpage
-              [2] [1] (PSUF_naloga2_TadejLozej_2025.aux)
+l.36 \newpage
+              [2]
+<imgs/ucni_spektri.png, id=38, 710.4141pt x 1000.2168pt>
+File: imgs/ucni_spektri.png Graphic file (type png)
+<use imgs/ucni_spektri.png>
+Package pdftex.def Info: imgs/ucni_spektri.png  used on input line 57.
+(pdftex.def)             Requested size: 486.54057pt x 685.0223pt.
+ [1] [2 <./imgs/ucni_spektri.png>]
+<imgs/lastne_vrednosti.png, id=56, 710.4141pt x 349.7868pt>
+File: imgs/lastne_vrednosti.png Graphic file (type png)
+<use imgs/lastne_vrednosti.png>
+Package pdftex.def Info: imgs/lastne_vrednosti.png  used on input line 84.
+(pdftex.def)             Requested size: 486.54057pt x 239.55981pt.
+<imgs/PCA1.png, id=58, 800.7516pt x 730.6497pt>
+File: imgs/PCA1.png Graphic file (type png)
+<use imgs/PCA1.png>
+Package pdftex.def Info: imgs/PCA1.png  used on input line 97.
+(pdftex.def)             Requested size: 486.54057pt x 443.95645pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./imgs/lastne_vrednosti.png>]
+<imgs/PCA2.png, id=67, 797.8608pt x 766.7847pt>
+File: imgs/PCA2.png Graphic file (type png)
+<use imgs/PCA2.png>
+Package pdftex.def Info: imgs/PCA2.png  used on input line 110.
+(pdftex.def)             Requested size: 486.54057pt x 467.59758pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./imgs/PCA1.png>]
+<imgs/korelacije1.png, id=76, 711.1368pt x 531.9072pt>
+File: imgs/korelacije1.png Graphic file (type png)
+<use imgs/korelacije1.png>
+Package pdftex.def Info: imgs/korelacije1.png  used on input line 119.
+(pdftex.def)             Requested size: 486.54057pt x 363.91595pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/korelacije2.png, id=78, 711.1368pt x 334.6101pt>
+File: imgs/korelacije2.png Graphic file (type png)
+<use imgs/korelacije2.png>
+Package pdftex.def Info: imgs/korelacije2.png  used on input line 128.
+(pdftex.def)             Requested size: 486.54057pt x 228.93083pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./imgs/PCA2.png>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6 <./imgs/korelacije1.png> <./imgs/korelacije2.png>]
+<imgs/PCA3.png, id=93, 791.3565pt x 709.6914pt>
+File: imgs/PCA3.png Graphic file (type png)
+<use imgs/PCA3.png>
+Package pdftex.def Info: imgs/PCA3.png  used on input line 137.
+(pdftex.def)             Requested size: 486.54057pt x 436.33308pt.
+ [7 <./imgs/PCA3.png>]
+<imgs/koda.png, id=100, 561.59813pt x 402.00188pt>
+File: imgs/koda.png Graphic file (type png)
+<use imgs/koda.png>
+Package pdftex.def Info: imgs/koda.png  used on input line 150.
+(pdftex.def)             Requested size: 486.54057pt x 348.27277pt.
+
+[8 <./imgs/koda.png>] (PSUF_naloga2_TadejLozej_2025.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `PSUF_naloga2_TadejLozej_2025.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 5BFE42650C5714A8719C2D8F312CEFA0;63.
+(rerunfilecheck)             Checksum: CA6A72BF026EEA48DFC0A23A5F289F61;267.
  ) 
 Here is how much of TeX's memory you used:
- 13543 strings out of 474486
- 230054 string characters out of 5743756
- 1927542 words of memory out of 5000000
- 35642 multiletter control sequences out of 15000+600000
- 562991 words of font info for 53 fonts, out of 8000000 for 9000
+ 13647 strings out of 474486
+ 232098 string characters out of 5743756
+ 1938542 words of memory out of 5000000
+ 35726 multiletter control sequences out of 15000+600000
+ 564340 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,445b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on PSUF_naloga2_TadejLozej_2025.pdf (3 pages, 65994 bytes).
+ 75i,6n,79p,1130b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\tadej\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/tadej/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tadej/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/tadej/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ta
+dej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on PSUF_naloga2_TadejLozej_2025.pdf (10 pages, 955103 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
