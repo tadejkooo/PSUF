@@ -141,6 +141,73 @@ S tem novim znanejem narišimo še dvodimenzionalno porazdelitev spektrov v odvi
 
 \section{t-SNE}
 
+Metoda t-SNE je nelinearna metoda za reduciranje dimenzij. Temelji na ideji o ohranitvi lokalnih odnosov med točkami. Točke, ki so si v izvornih podatkih blizu naj si bojo blizu tudi v nizkodimenzionalni predstavitvi.
+
+Postopek najprej v visoko dimenzionalnem prostoru izračuna podobnost oz. verjetnost podobnosti med točkami na osnovi izbrane metrike razdalje. Ponavadi uporabimo kar evklidsko metriko vendar se lahko poslužimo tudi drugih metrik. Izbira metrike ima precej ključno vlogo, saj določa kaj pomeni bližina med točkami v originalnem prostoru.
+
+Parameter perplexity v metodi t-SNE v grobem določa koliko sosedov naj posamezna točka v podatkovnem prostoru upošteva pri gradnji lokalnih verjetnostnih porazdelitev. Lahko si ga predstavljamo kot število sosedov, ki vplivajo na to, kako se točka razporedi v nizkodimenzionalnem prostoru.
+
+Na sliki \ref{fig:X-euclidiean} lahko vidimo porazdelitev spektrov v dvodimenzionalnem t-SNE prostoru ob uporabi evklidske metrike za nekaj različnih vrednosti parametra perplexity. V porazdelitvi z zvezdicami različnih barv prav tako vidimo spektre znanih tipov. Vidimo, da se pri majhnih vrednostih parametra perplexity tvori precej očitnih skupkov v prostoru. Spektri znanih tipov so si precej blizu eden drugemu. Pri srednjih vrednostih parametra skupki postanejo večji in jih je posledično tudi manj. Pri velikih vrednostih parametra perplexity vidimo, da se prej lepo definirani skupki začnejo združevati. Na videz sta najboljši vrednosti parametra 20 in 30. Zvezde tipa BIN so raztresene po večjem delu porazdelitve. Zvezde tipa MAB ter CMP pa tvorijo več skupkov.
+
+Poleg evklidske metrike za uporabo t-SNE sem si ogledal tudi projekcije z uporabo treh drugih metrik. Smiselne sta se mi zdele kosinusna \ref{fig:X-cosine} ter korelacijska \ref{fig:X-correlation} metrika. Te dve ne upoštevata amplitud absorpcijskih in emisijskih črt temveč zgolj obliko spektra. Uporabil sem tudi cityblock oz. Manhattan metriko \ref{fig:X-cityblock}. Izbral sem jo, ker ta metrika velika ter majhna odstopanja koordinat upošteva enako, medtem ko evklidska metrika velika odstopanja posameznih koordinat bolj penalizira. Če ima spekter na enakem mestu različno globoke absorpcijske črte cityblock metrika različne globine penalizira manj kot evklidska metrika.
+
+Pri kosinusni metriki \ref{fig:X-cosine} in naraščanju perplexitija lahko vidimo podbne pojave. Sama porazdelitev spektrov po prostoru je precej podobna kot pri evklidski metriki. Pojavijo se podobni skupki, ki so mogoče le drugače zarotirani in pozicionirani v prostoru. Se mi pa zgolj na pogled vseeno zdi, da je pri evklidski metriki ločitev boljša.
+
+Pri korelacijski metriki \ref{fig:X-correlation} je porazdelitev rahlo drugačna kot prejšnjih dveh primerih. Nastalo je nekaj skupkov vendar ne toliko kot v primeru evklidske metrike.
+
+Cityblock oz. Manhattan metrika \ref{fig:X-cityblock} vrne podobno porazdelitev kot evklidska metrika. Razlike so praktično minimalne.
+
+Na sliki \ref{fig:tSNE-obmocje} lahko še enkrat vidimo porazdelitev v t-SNE projekciji z evklidsko metriko in parametrom perplexity 30. Z rdečo je označeno jasno ločen skupek spektrov v katerem se ni nahajal nobeden izmed spektrov znanega tipa. Iz tega razloga sem si izbral to območje ter narisal povprečni spekter devetdesetih spektrov v tem območju. Vidimo močno absorpcijo pri valovni dolžini $\text{H}_\alpha$ ter kar precej absorpcije pri drugih valovnih dolžinah. Nisem astronom ampak sklepam, da gre za skupino hladnih zvezd z veliko kovinami.
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.95\linewidth, height=23.4cm]{imgs/X-euclidiean.png}
+    \caption{Porazdelitev spektrov v 2D t-SNE prostoru pri različnih vrednostih parametra perplexity ter uporabi \textbf{evklidske metrike}.}
+    \label{fig:X-euclidiean}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.95\linewidth, height=23.4cm]{imgs/X-cosine.png}
+    \caption{Porazdelitev spektrov v 2D t-SNE prostoru pri različnih vrednostih parametra perplexity ter uporabi \textbf{kosinusne metrike}.}
+    \label{fig:X-cosine}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.95\linewidth, height=23.4cm]{imgs/X-correlation.png}
+    \caption{Porazdelitev spektrov v 2D t-SNE prostoru pri različnih vrednostih parametra perplexity ter uporabi \textbf{Korelacijske metrike}.}
+    \label{fig:X-correlation}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.95\linewidth, height=23.4cm]{imgs/X-cityblock.png}
+    \caption{Porazdelitev spektrov v 2D t-SNE prostoru pri različnih vrednostih parametra perplexity ter uporabi \textbf{Manhattan metrike}.}
+    \label{fig:X-cityblock}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.95\linewidth]{imgs/tSNE-obmocje.png}
+    \caption{Porazdelitev spektrov v 2D t-SNE prostoru vrednosti parametra perplexity 30 ter uporabi \textbf{Evklidske metrike}. Z rdečo je označen skupek spektrov. Spodaj je prikazan povprečen spekter izbranega območja skupaj z standardnim odklonom.}
+    \label{fig:tSNE-obmocje}
+\end{figure}
+
+\section{Zaključek}
+
+V nalogi smo klasificirali zvezdne spektre s pomočjo linearne metode PCA ter nelinearne metode t-SNE. Glavna ideja je projekcija spektrov iz velikodimenzionalnega prostora v smiseln manjdimenzionalen prostor. Pri prvi metodi sem si ogledal različne porazdelitve ter izračunal korelacije med glavnimi koordinatami ter določenimi fizikalnimi količinami. Pri drugi metodi sem si ogledal porazdelitve z uporabo različnih metrik ter različnih vrednostih perplexity. V porazdelitvi sem si izbral izoliran skupek spektrov ter narisal povprečen spekter tega skupka. Mislim, da gre za hladne zvezde z veliko kovinami.
+
 \newpage
 
 \section{Dodatek}

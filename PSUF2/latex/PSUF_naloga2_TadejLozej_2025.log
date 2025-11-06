@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  1 NOV 2025 20:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  6 NOV 2025 22:06
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -585,18 +585,18 @@ een already used, duplicate ignored
                    \relax 
 l.36 \newpage
               [2]
-<imgs/ucni_spektri.png, id=38, 710.4141pt x 1000.2168pt>
+<imgs/ucni_spektri.png, id=43, 710.4141pt x 1000.2168pt>
 File: imgs/ucni_spektri.png Graphic file (type png)
 <use imgs/ucni_spektri.png>
 Package pdftex.def Info: imgs/ucni_spektri.png  used on input line 57.
 (pdftex.def)             Requested size: 486.54057pt x 685.0223pt.
  [1] [2 <./imgs/ucni_spektri.png>]
-<imgs/lastne_vrednosti.png, id=56, 710.4141pt x 349.7868pt>
+<imgs/lastne_vrednosti.png, id=61, 710.4141pt x 349.7868pt>
 File: imgs/lastne_vrednosti.png Graphic file (type png)
 <use imgs/lastne_vrednosti.png>
 Package pdftex.def Info: imgs/lastne_vrednosti.png  used on input line 84.
 (pdftex.def)             Requested size: 486.54057pt x 239.55981pt.
-<imgs/PCA1.png, id=58, 800.7516pt x 730.6497pt>
+<imgs/PCA1.png, id=63, 800.7516pt x 730.6497pt>
 File: imgs/PCA1.png Graphic file (type png)
 <use imgs/PCA1.png>
 Package pdftex.def Info: imgs/PCA1.png  used on input line 97.
@@ -606,7 +606,7 @@ Package pdftex.def Info: imgs/PCA1.png  used on input line 97.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./imgs/lastne_vrednosti.png>]
-<imgs/PCA2.png, id=67, 797.8608pt x 766.7847pt>
+<imgs/PCA2.png, id=72, 797.8608pt x 766.7847pt>
 File: imgs/PCA2.png Graphic file (type png)
 <use imgs/PCA2.png>
 Package pdftex.def Info: imgs/PCA2.png  used on input line 110.
@@ -616,7 +616,7 @@ Package pdftex.def Info: imgs/PCA2.png  used on input line 110.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <./imgs/PCA1.png>]
-<imgs/korelacije1.png, id=76, 711.1368pt x 531.9072pt>
+<imgs/korelacije1.png, id=81, 711.1368pt x 531.9072pt>
 File: imgs/korelacije1.png Graphic file (type png)
 <use imgs/korelacije1.png>
 Package pdftex.def Info: imgs/korelacije1.png  used on input line 119.
@@ -625,7 +625,7 @@ Package pdftex.def Info: imgs/korelacije1.png  used on input line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imgs/korelacije2.png, id=78, 711.1368pt x 334.6101pt>
+<imgs/korelacije2.png, id=83, 711.1368pt x 334.6101pt>
 File: imgs/korelacije2.png Graphic file (type png)
 <use imgs/korelacije2.png>
 Package pdftex.def Info: imgs/korelacije2.png  used on input line 128.
@@ -638,32 +638,63 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: Text page 6 contains only floats.
 
 [6 <./imgs/korelacije1.png> <./imgs/korelacije2.png>]
-<imgs/PCA3.png, id=93, 791.3565pt x 709.6914pt>
+<imgs/PCA3.png, id=98, 791.3565pt x 709.6914pt>
 File: imgs/PCA3.png Graphic file (type png)
 <use imgs/PCA3.png>
 Package pdftex.def Info: imgs/PCA3.png  used on input line 137.
 (pdftex.def)             Requested size: 486.54057pt x 436.33308pt.
  [7 <./imgs/PCA3.png>]
-<imgs/koda.png, id=100, 561.59813pt x 402.00188pt>
+[8]
+<imgs/X-euclidiean.png, id=122, 711.1368pt x 1091.9997pt>
+File: imgs/X-euclidiean.png Graphic file (type png)
+<use imgs/X-euclidiean.png>
+Package pdftex.def Info: imgs/X-euclidiean.png  used on input line 166.
+(pdftex.def)             Requested size: 486.53981pt x 665.81892pt.
+ [9 <./imgs/X-euclidiean.png>]
+<imgs/X-cosine.png, id=128, 711.1368pt x 1091.9997pt>
+File: imgs/X-cosine.png Graphic file (type png)
+<use imgs/X-cosine.png>
+Package pdftex.def Info: imgs/X-cosine.png  used on input line 175.
+(pdftex.def)             Requested size: 486.53981pt x 665.81892pt.
+ [10 <./imgs/X-cosine.png>]
+<imgs/X-correlation.png, id=134, 711.1368pt x 1091.9997pt>
+File: imgs/X-correlation.png Graphic file (type png)
+<use imgs/X-correlation.png>
+Package pdftex.def Info: imgs/X-correlation.png  used on input line 184.
+(pdftex.def)             Requested size: 486.53981pt x 665.81892pt.
+ [11 <./imgs/X-correlation.png>]
+<imgs/X-cityblock.png, id=141, 711.1368pt x 1091.9997pt>
+File: imgs/X-cityblock.png Graphic file (type png)
+<use imgs/X-cityblock.png>
+Package pdftex.def Info: imgs/X-cityblock.png  used on input line 193.
+(pdftex.def)             Requested size: 486.53981pt x 665.81892pt.
+ [12 <./imgs/X-cityblock.png>]
+<imgs/tSNE-obmocje.png, id=147, 711.1368pt x 566.5968pt>
+File: imgs/tSNE-obmocje.png Graphic file (type png)
+<use imgs/tSNE-obmocje.png>
+Package pdftex.def Info: imgs/tSNE-obmocje.png  used on input line 202.
+(pdftex.def)             Requested size: 486.54057pt x 387.64961pt.
+ [13 <./imgs/tSNE-obmocje.png>]
+<imgs/koda.png, id=153, 561.59813pt x 402.00188pt>
 File: imgs/koda.png Graphic file (type png)
 <use imgs/koda.png>
-Package pdftex.def Info: imgs/koda.png  used on input line 150.
+Package pdftex.def Info: imgs/koda.png  used on input line 217.
 (pdftex.def)             Requested size: 486.54057pt x 348.27277pt.
 
-[8 <./imgs/koda.png>] (PSUF_naloga2_TadejLozej_2025.aux)
+[14 <./imgs/koda.png>] (PSUF_naloga2_TadejLozej_2025.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `PSUF_naloga2_TadejLozej_2025.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: CA6A72BF026EEA48DFC0A23A5F289F61;267.
+(rerunfilecheck)             Checksum: 29318281869BBA4D0D0FF1F57563D9F7;358.
  ) 
 Here is how much of TeX's memory you used:
- 13647 strings out of 474486
- 232098 string characters out of 5743756
+ 13700 strings out of 474486
+ 233277 string characters out of 5743756
  1938542 words of memory out of 5000000
- 35726 multiletter control sequences out of 15000+600000
+ 35767 multiletter control sequences out of 15000+600000
  564340 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,1130b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -677,9 +708,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tadej/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/tadej/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ta
 dej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on PSUF_naloga2_TadejLozej_2025.pdf (10 pages, 955103 bytes).
+Output written on PSUF_naloga2_TadejLozej_2025.pdf (16 pages, 3270262 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
