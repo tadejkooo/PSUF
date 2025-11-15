@@ -2,3 +2,5 @@
 \contentsline {section}{\numberline {1}Uvod}{1}{section.1}%
 \contentsline {section}{\numberline {2}Podatki}{2}{section.2}%
 \contentsline {section}{\numberline {3}Uporaba nevronskih mrež}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Nezašumljeni podaki}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Zašumljeni podaki}{6}{subsection.3.2}%

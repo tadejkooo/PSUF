@@ -117,4 +117,32 @@ Našo hipotezo o povezavi velikosti elastične konstante ter času relaksacije l
 
 Želimo skonstruirati nevronsko mrežo, ki bi za vsak časovni potek intenzitete $I(t)$ znala določiti elastično konstanto $K$. Vhodni podatek mreže je vektor $\vec{X} = [I_{t=0}, I_{t=\Delta t}, ..., I_{t=399\Delta t}]$ izhodni pa $\vec{Y} = [K]$. Eksperimentalno zadostne količine podatkov za učenje nevronske mreže nemoremo doseči, zato se poslužujemo simulacij.
 
+Za vse ocene uspešnosti modelov sem uporabil navskrižno KFold validacijo. Ta avtomatsko razdeli podatke na dva dela. Enemu delu recimo $X$ drugemu pa $X_{test}$. Podatke $X$ med treningom nadalje razdelimo na del za treniranje $X_{train}$ ter del za validacijo $X_{val}$. S podatki $X_{train}$ optimiziramo parametre mreže, s podatki $X_{val}$ pa učenje pravočasno ustavimo, da ne pride do prekomernega prilagajanja. To storimo s pomočjo stoploss callbacka, ki ga keras omogoča. Na tretji neodvisna množica podatkov $X_{test}$ pa določimo uspešnost mreže.
+
+\subsection{Nezašumljeni podaki}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/mreze1.png}
+    \caption{Povprečne funkcije izgube mreže z dvema skritima slojema v odvisnosti od števila Epochov za različne aktivacijske funkcije nevronov. Prikazani sta trening ter validacijska funkcija izgube. Prav tako je prikazana povprečna MAE vrednost med testno množico in napovedjo. Uporabljeni so zgolj podatki intenzitete pri $\lambda = 500 \, \text{nm}$.}
+    \label{fig:mreze1}
+\end{figure}
+
+Nezašumljene podatke sem uporabil zato, da bi dobil optimalne hiperparametre mreže. Na začetku sem za učenje uporabil zgolj podatke pridobljene iz $I(\lambda = 500 \, \text{nm})$. Rezultati za učenje mreže z dvema skritima slojema ob uporabi različnih aktivacijskih funkcij so prikazani na sliki \ref{fig:mreze1}. Prva skrita plast ima dvesto nevronov, druga pa sto. Na grafih so prikazane funkcije izgube (Loss funkcije) trening ter validacijske množice, ki so v resnici zgolj MAE metrika. S črtkano črto je prikazana tudi MAE vrednost med \linebreak
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/mreze2.png}
+    \caption{Povprečne funkcije izgube nevronskih mrež različnih geometrij. Na sliki so prikazane povprečne funkcije izgube trening ter validacijske množice. S črtkano zeleno črto je prikazana povprečna vrednost MAE med napovedjo ter testno množico. V okvirčku sta zapisana MAE ter MSE med napovedjo ter testno množico.}
+    \label{fig:mreze2}
+\end{figure}
+
+\noindent napovedjo najboljše mreže ter testno množico podatkov. V okvirčku sta zapisana MAE in MSE odstopanja testne množice od napovedi. Vidimo, da je najslabša aktivacijska funkcija za ta primer linearna funkcije. Povprečni test MAE je namreč precej večji kot pri vseh ostalih aktivacijskih funkcijah. Izgleda kot da je sigmoid na tretjem mestu. Tangens hiperbolicus in relu pa sta si precej blizu po uspešnosti. Izgleda, kot da se je mreža z aktivacijsko funkcijo tanh natrenirala v malo manj epochih kot mreža z relu ampak je mreža z relu useeno uspešnejša. Iz tega razloga bomo nadaljevali z aktivacijsko funkcijo relu.
+
+Za nadalnje učenje mrež sem za vhodne podatke uporabil vse porfile intenzitet. Zato sem mogel umetno podaljšati izhodni vektor elastičnih konstant sam s seboj. Nevronska mreža se je tudi na takšnih podatkih uspešno učila. Na sliki \ref{fig:mreze2} lahko vidimo treniranje več različnih geometrij nevronskih mrež. Na vsakem grafu lahko vidimo funkcijo izgube trening ter validacijske množice, Prav tako s črtkano črto vidimo MAE med napovedjo najboljše mreže ter testno množico. V okvirčku sta zapisani obe MAE ter MSE vrednost odstopanja. Na sliki so prikazana učenja štirih različnih mrež. Prva mreža ima le eno skrito plast z 200 nevroni. Vidimo, da se je mreža uspešno učila. Najboljši rezultati so z mrežo, ki ima tri skrite plasti, in sicer z 200, 100 ter 50 nevroni.
+
+\subsection{Zašumljeni podaki}
+
+
+
 \end{document}

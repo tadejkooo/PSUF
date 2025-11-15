@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  14 NOV 2025 21:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  15 NOV 2025 20:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -584,39 +584,57 @@ een already used, duplicate ignored
                    \relax 
 l.36 \newpage
               [2] [1]
-<imgs/Kvalues.png, id=46, 711.1368pt x 349.7868pt>
+<imgs/Kvalues.png, id=56, 711.1368pt x 349.7868pt>
 File: imgs/Kvalues.png Graphic file (type png)
 <use imgs/Kvalues.png>
 Package pdftex.def Info: imgs/Kvalues.png  used on input line 93.
 (pdftex.def)             Requested size: 460.93153pt x 226.71825pt.
-<imgs/odstopanje.png, id=48, 711.1368pt x 422.0568pt>
+<imgs/odstopanje.png, id=58, 711.1368pt x 422.0568pt>
 File: imgs/odstopanje.png Graphic file (type png)
 <use imgs/odstopanje.png>
 Package pdftex.def Info: imgs/odstopanje.png  used on input line 100.
 (pdftex.def)             Requested size: 460.93153pt x 273.56085pt.
  [2 <./imgs/Kvalues.png> <./imgs/odstopanje.png>]
-<imgs/relaksacija.png, id=60, 711.1368pt x 605.6226pt>
+<imgs/relaksacija.png, id=70, 711.1368pt x 605.6226pt>
 File: imgs/relaksacija.png Graphic file (type png)
 <use imgs/relaksacija.png>
 Package pdftex.def Info: imgs/relaksacija.png  used on input line 111.
 (pdftex.def)             Requested size: 460.93153pt x 392.5411pt.
- [3 <./imgs/relaksacija.png>] (PSUF_naloga3_TadejLozej.aux)
+ [3 <./imgs/relaksacija.png>]
+<imgs/mreze1.png, id=77, 710.4141pt x 851.3406pt>
+File: imgs/mreze1.png Graphic file (type png)
+<use imgs/mreze1.png>
+Package pdftex.def Info: imgs/mreze1.png  used on input line 126.
+(pdftex.def)             Requested size: 460.93153pt x 552.36458pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+[4 <./imgs/mreze1.png>]
+<imgs/mreze2.png, id=85, 711.1368pt x 851.3406pt>
+File: imgs/mreze2.png Graphic file (type png)
+<use imgs/mreze2.png>
+Package pdftex.def Info: imgs/mreze2.png  used on input line 135.
+(pdftex.def)             Requested size: 460.93153pt x 551.806pt.
+ [5 <./imgs/mreze2.png>] [6]
+(PSUF_naloga3_TadejLozej.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `PSUF_naloga3_TadejLozej.out' has not changed
 .
-(rerunfilecheck)             Checksum: 5267FA0908888AFAD2E11DD9DA197ACF;308.
+(rerunfilecheck)             Checksum: 068158B07504E8FA227D46473AC06D70;614.
  ) 
 Here is how much of TeX's memory you used:
- 13595 strings out of 474486
- 230992 string characters out of 5743756
+ 13621 strings out of 474486
+ 231447 string characters out of 5743756
  1940542 words of memory out of 5000000
- 35683 multiletter control sequences out of 15000+600000
- 563831 words of font info for 56 fonts, out of 8000000 for 9000
+ 35702 multiletter control sequences out of 15000+600000
+ 564138 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,675b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,909b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -630,9 +648,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
 :/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on PSUF_naloga3_TadejLozej.pdf (5 pages, 369714 bytes).
+Output written on PSUF_naloga3_TadejLozej.pdf (8 pages, 664435 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
