@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  15 NOV 2025 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  16 NOV 2025 11:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -617,7 +617,13 @@ File: imgs/mreze2.png Graphic file (type png)
 <use imgs/mreze2.png>
 Package pdftex.def Info: imgs/mreze2.png  used on input line 135.
 (pdftex.def)             Requested size: 460.93153pt x 551.806pt.
- [5 <./imgs/mreze2.png>] [6]
+ [5 <./imgs/mreze2.png>]
+<imgs/rezultati1.png, id=95, 421.3341pt x 422.0568pt>
+File: imgs/rezultati1.png Graphic file (type png)
+<use imgs/rezultati1.png>
+Package pdftex.def Info: imgs/rezultati1.png  used on input line 149.
+(pdftex.def)             Requested size: 307.2929pt x 307.83485pt.
+ [6 <./imgs/rezultati1.png>]
 (PSUF_naloga3_TadejLozej.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -628,13 +634,13 @@ Package rerunfilecheck Info: File `PSUF_naloga3_TadejLozej.out' has not changed
 (rerunfilecheck)             Checksum: 068158B07504E8FA227D46473AC06D70;614.
  ) 
 Here is how much of TeX's memory you used:
- 13621 strings out of 474486
- 231447 string characters out of 5743756
+ 13630 strings out of 474486
+ 231660 string characters out of 5743756
  1940542 words of memory out of 5000000
- 35702 multiletter control sequences out of 15000+600000
+ 35710 multiletter control sequences out of 15000+600000
  564138 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,909b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,925b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -648,9 +654,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
 :/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on PSUF_naloga3_TadejLozej.pdf (8 pages, 664435 bytes).
+Output written on PSUF_naloga3_TadejLozej.pdf (8 pages, 790687 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

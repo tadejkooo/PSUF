@@ -141,6 +141,16 @@ Nezašumljene podatke sem uporabil zato, da bi dobil optimalne hiperparametre mr
 
 Za nadalnje učenje mrež sem za vhodne podatke uporabil vse porfile intenzitet. Zato sem mogel umetno podaljšati izhodni vektor elastičnih konstant sam s seboj. Nevronska mreža se je tudi na takšnih podatkih uspešno učila. Na sliki \ref{fig:mreze2} lahko vidimo treniranje več različnih geometrij nevronskih mrež. Na vsakem grafu lahko vidimo funkcijo izgube trening ter validacijske množice, Prav tako s črtkano črto vidimo MAE med napovedjo najboljše mreže ter testno množico. V okvirčku sta zapisani obe MAE ter MSE vrednost odstopanja. Na sliki so prikazana učenja štirih različnih mrež. Prva mreža ima le eno skrito plast z 200 nevroni. Vidimo, da se je mreža uspešno učila. Najboljši rezultati so z mrežo, ki ima tri skrite plasti, in sicer z 200, 100 ter 50 nevroni.
 
+Najbolj pomembna je učinkovitost modela na še nevidenih podatkih. Prej sem omenil, da KFold validacija podatke razdeli na tri množice. Ampak v KFold validacijo sem dal le 90\% vseh podatkov. Preostalih 10\% podatkov poimenujmo $\tilde{X}_{test}$ ter $\tilde{Y}_{test}$. To je 40000 simulacij, ki jih nobena od nevronskih mrež ni videla. S to množico podatkov lahko testiramo kako dobre so napovedi najboljšega modela. Od zdaj naprej bom testiral model s tremi skritimi sloji ter aktivacijsko funkcijo relu. Na sliki \ref{fig:rezultati1} lahko vidimo primerjavo napovedanih ter pravih vrednosti $K/K_{max}$. Z rdečima ter zelenima črtkanima črtama lahko vidimo območja v katerih se nahajajo napovedi z 5\% in 10\% napako. Znotraj rdečega območja se nahaja 71\% napovedi, znotraj zelenega pa 82\% napovedi.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{imgs/rezultati1.png}
+    \caption{Primerjava Napovedanih ter pravih vrednosti. Z rdečo ter zeleno črtkano črto sta podani območji za 5\% ter 10\% napako.}
+    \label{fig:rezultati1}
+\end{figure}
+
 \subsection{Zašumljeni podaki}
 
 
