@@ -3,4 +3,5 @@
 \contentsline {section}{\numberline {2}Podatki}{2}{section.2}%
 \contentsline {section}{\numberline {3}Uporaba nevronskih mrež}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Nezašumljeni podaki}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Zašumljeni podaki}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Zašumljeni podaki}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Dve elastični konstanti}{7}{subsection.3.3}%

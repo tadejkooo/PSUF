@@ -153,6 +153,26 @@ Najbolj pomembna je učinkovitost modela na še nevidenih podatkih. Prej sem ome
 
 \subsection{Zašumljeni podaki}
 
+Poleg nezašumljenih podatkov imamo podane tudi z belim šumom zašumljene podatke. Če mrežo naučimo na zašumljenih podatkih bomo mogoče dobili bolj robusten model. Na sliki \ref{fig:mreze3} lahko vidimo funkcije izgube KFold učenja nevronske mreže s tremi skritimi sloji naučeno na podatkih brez šuma (zgoraj) ter na podatkih s šumom (spodaj). Vidimo, da je funkcija izgube dosegla nižjo vrednost na mreži učeni brez šuma. Tukaj je potrebno poudariti, da se je mreža validirala ter testirala na enakem tipu podatkov kot na katerih se je učila (zašumljeni/nezašumljeni). Eksperimentalni podatki so zmeraj zašumljeni in mreža, ki je naučena na nezašuljenih podatkih teh v resnici nikoli ni videla.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/mreze3.png}
+    \caption{Povprečne funkcije izgube nevronske mreže, ki smo jo učili na zašumljenih ter nezašumljenih podatkih. Prikazani sta funkcija izgube validacijske množice ter trening množice. Prav tako je s črtkano zeleno črto prikazano MAE odstopanje med napovedjo mreže ter testnimi podatki.}
+    \label{fig:mreze3}
+\end{figure}
+
+Obe modela se splača testirati na zašumljenih ter nezašumljenih podatkih. Ti rezultati so prikazani na sliki \ref{fig:rezultati2}. V naslovih model0 označuje model, ki je bil naučen na nezašumljenih podatkih, model100 pa model, ki je bil naučen na zašumljenih podatkih. Na zgornjih dveh slikah vidimo kako dobro modela napovesta elastične konstante na nezašumljenih podatkih. Vidimo, da se tukaj model0 bolje odreže. A precej važno je kako dobro modela napovesta elastične konstante iz zašumljenih podatkov. To lahko vidimo na spodnjih dveh grafih. Vidimo, da na tem tipu podatkov model100 bolje napove elastične konstante. V tem smislu lahko rečemo, da je bolj robusten kot model0.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/rezultati2.png}
+    \caption{Primerjava napovedanih ter pravih vrednosti elastičnih konstant modela0 (model natreniran na nezašumlojenih podatkih) ter modela100 (model natreniran na zašumljenih podatkih). Vidimo, da model0 bolje napove elastične konstante iz nezašumljenih podatkov a slabše iz zašuzmljenih. V tem smislu lahko rečemo, da je model100 bolj robusten.}
+    \label{fig:rezultati2}
+\end{figure}
+
+\subsection{Dve elastični konstanti}
+
+Tekoči kristali imajo v splošnem različno velike elastične konstante. V tem podpoglavju si oglejmo učenje mreže na podatkih, ki upoštevajo dve različni elastični konstanti $K_{11}$ ter $K_{33}$.
 
 \end{document}
