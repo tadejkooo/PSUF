@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  17 NOV 2025 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.8.6)  20 NOV 2025 23:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -584,24 +584,24 @@ een already used, duplicate ignored
                    \relax 
 l.36 \newpage
               [2] [1]
-<imgs/Kvalues.png, id=61, 711.1368pt x 349.7868pt>
+<imgs/Kvalues.png, id=71, 711.1368pt x 349.7868pt>
 File: imgs/Kvalues.png Graphic file (type png)
 <use imgs/Kvalues.png>
 Package pdftex.def Info: imgs/Kvalues.png  used on input line 93.
 (pdftex.def)             Requested size: 460.93153pt x 226.71825pt.
-<imgs/odstopanje.png, id=63, 711.1368pt x 422.0568pt>
+<imgs/odstopanje.png, id=73, 711.1368pt x 422.0568pt>
 File: imgs/odstopanje.png Graphic file (type png)
 <use imgs/odstopanje.png>
 Package pdftex.def Info: imgs/odstopanje.png  used on input line 100.
 (pdftex.def)             Requested size: 460.93153pt x 273.56085pt.
  [2 <./imgs/Kvalues.png> <./imgs/odstopanje.png>]
-<imgs/relaksacija.png, id=75, 711.1368pt x 605.6226pt>
+<imgs/relaksacija.png, id=85, 711.1368pt x 605.6226pt>
 File: imgs/relaksacija.png Graphic file (type png)
 <use imgs/relaksacija.png>
 Package pdftex.def Info: imgs/relaksacija.png  used on input line 111.
 (pdftex.def)             Requested size: 460.93153pt x 392.5411pt.
  [3 <./imgs/relaksacija.png>]
-<imgs/mreze1.png, id=82, 710.4141pt x 851.3406pt>
+<imgs/mreze1.png, id=92, 710.4141pt x 851.3406pt>
 File: imgs/mreze1.png Graphic file (type png)
 <use imgs/mreze1.png>
 Package pdftex.def Info: imgs/mreze1.png  used on input line 126.
@@ -612,24 +612,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 [4 <./imgs/mreze1.png>]
-<imgs/mreze2.png, id=90, 711.1368pt x 851.3406pt>
+<imgs/mreze2.png, id=100, 711.1368pt x 851.3406pt>
 File: imgs/mreze2.png Graphic file (type png)
 <use imgs/mreze2.png>
 Package pdftex.def Info: imgs/mreze2.png  used on input line 135.
 (pdftex.def)             Requested size: 460.93153pt x 551.806pt.
  [5 <./imgs/mreze2.png>]
-<imgs/rezultati1.png, id=100, 421.3341pt x 422.0568pt>
+<imgs/rezultati1.png, id=110, 421.3341pt x 422.0568pt>
 File: imgs/rezultati1.png Graphic file (type png)
 <use imgs/rezultati1.png>
 Package pdftex.def Info: imgs/rezultati1.png  used on input line 149.
 (pdftex.def)             Requested size: 307.2929pt x 307.83485pt.
  [6 <./imgs/rezultati1.png>]
-<imgs/mreze3.png, id=108, 710.4141pt x 426.393pt>
+<imgs/mreze3.png, id=118, 710.4141pt x 426.393pt>
 File: imgs/mreze3.png Graphic file (type png)
 <use imgs/mreze3.png>
 Package pdftex.def Info: imgs/mreze3.png  used on input line 160.
 (pdftex.def)             Requested size: 460.93153pt x 276.65118pt.
-<imgs/rezultati2.png, id=110, 702.4644pt x 710.4141pt>
+<imgs/rezultati2.png, id=120, 702.4644pt x 710.4141pt>
 File: imgs/rezultati2.png Graphic file (type png)
 <use imgs/rezultati2.png>
 Package pdftex.def Info: imgs/rezultati2.png  used on input line 169.
@@ -638,24 +638,68 @@ Package pdftex.def Info: imgs/rezultati2.png  used on input line 169.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<imgs/mreze4.png, id=122, 710.4141pt x 638.8668pt>
+File: imgs/mreze4.png Graphic file (type png)
+<use imgs/mreze4.png>
+Package pdftex.def Info: imgs/mreze4.png  used on input line 180.
+(pdftex.def)             Requested size: 460.93153pt x 414.50787pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [7 <./imgs/mreze3.png>] [8 <./imgs/rezultati2.png>]
-(PSUF_naloga3_TadejLozej.aux)
+<imgs/mreze5.png, id=140, 711.1368pt x 638.8668pt>
+File: imgs/mreze5.png Graphic file (type png)
+<use imgs/mreze5.png>
+Package pdftex.def Info: imgs/mreze5.png  used on input line 195.
+(pdftex.def)             Requested size: 460.93153pt x 414.0887pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/histogram.png, id=141, 711.1368pt x 240.6591pt>
+File: imgs/histogram.png Graphic file (type png)
+<use imgs/histogram.png>
+Package pdftex.def Info: imgs/histogram.png  used on input line 202.
+(pdftex.def)             Requested size: 460.93153pt x 155.9859pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/hist1.png, id=144, 711.1368pt x 349.7868pt>
+File: imgs/hist1.png Graphic file (type png)
+<use imgs/hist1.png>
+Package pdftex.def Info: imgs/hist1.png  used on input line 215.
+(pdftex.def)             Requested size: 460.93153pt x 226.71825pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/hist2.png, id=145, 710.4141pt x 349.7868pt>
+File: imgs/hist2.png Graphic file (type png)
+<use imgs/hist2.png>
+Package pdftex.def Info: imgs/hist2.png  used on input line 222.
+(pdftex.def)             Requested size: 460.93153pt x 226.94775pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./imgs/mreze4.png>] [10 <./imgs/mreze5.png> <./imgs/histogram.png>]
+[11 <./imgs/hist1.png> <./imgs/hist2.png>] [12
+
+] (PSUF_naloga3_TadejLozej.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `PSUF_naloga3_TadejLozej.out' has not changed
 .
-(rerunfilecheck)             Checksum: 018EB6B6A2E754494F69E600676C3D03;795.
+(rerunfilecheck)             Checksum: C89BE1F6000073E2DE83ECABD1B4215B;1061.
  ) 
 Here is how much of TeX's memory you used:
- 13652 strings out of 474486
- 232096 string characters out of 5743756
+ 13705 strings out of 474486
+ 233091 string characters out of 5743756
  1940542 words of memory out of 5000000
- 35727 multiletter control sequences out of 15000+600000
+ 35769 multiletter control sequences out of 15000+600000
  564138 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,925b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,925b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -669,9 +713,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
 :/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb><C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on PSUF_naloga3_TadejLozej.pdf (10 pages, 1471058 bytes).
+Output written on PSUF_naloga3_TadejLozej.pdf (14 pages, 1810114 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

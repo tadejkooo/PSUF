@@ -173,6 +173,61 @@ Obe modela se splača testirati na zašumljenih ter nezašumljenih podatkih. Ti 
 
 \subsection{Dve elastični konstanti}
 
-Tekoči kristali imajo v splošnem različno velike elastične konstante. V tem podpoglavju si oglejmo učenje mreže na podatkih, ki upoštevajo dve različni elastični konstanti $K_{11}$ ter $K_{33}$.
+Tekoči kristali imajo v splošnem različno velike elastične konstante. V tem podpoglavju si oglejmo učenje mreže na podatkih, ki upoštevajo dve različni elastični konstanti $K_{11}$ ter $K_{33}$. Na sliki \ref{fig:mreze4} lahko vidimo funkcijo izgube ob učenju mreže na nezašumljenih podatkih z dvema elastičnima konstantama in različnimi sidranji (planarno-planarno, planarno-homeotropno, homeotropno-homeotropno). Vidimo, da se je mreža uspešno naučila na vseh množicah podatkov. Povprečni MAE med testnimi podatki ter napovedjo najboljše mreže so večji kot prej, ker mreža sedaj napoveduje dve vrednosti in ne samo ene. Najuspešneje je testne podatke mreža napovedala na hh načinu sidranja.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/mreze4.png}
+    \caption{Povprečne funkcije izgube nevronske mreže, ki smo jo učili na podatkih z dvema elastičnima konstantama in različnimi sidranji. Prikazani sta funkcija izgube validacijske množice ter trening množice. Prav tako je s črtkano zeleno črto prikazano MAE odstopanje med napovedjo mreže ter testnimi podatki.}
+    \label{fig:mreze4}
+\end{figure}
+
+Na sliki \ref{fig:mreze5} lahko vidimo funkcije izgube ob učenju mreže na zašumljenih podatkih. Lahko vidimo, da so MAE odstopanja med napovedjo ter dejanskimi vrednostmi večja kot pri nezašumljenih podatkih ampak to je seveda smiselno, saj so testni podatki prav tako zašumljeni.
+
+Na sliki \ref{fig:histogram} lahko vidimo kako dobre so napovedi modelov na testnih podatkih. Na x osi vidimo šest različnih modelov. Model0-ij je model, ki je bil naučen na zezašumljenih podatkih z tipom sidranja ij. Model100-ij je model, ki je bil naučen na zašumljenih podatkih s tipom sidranja ij. Z modro lahko vidimo histogramiran delež vrednosti konstant $K_{11}$, ki jih je model napovedal z 5\% napako. Brez šrafure je model napovedal konstanto iz nezašumljenih podatkov s šrafuro pa iz zašumljenih. Enako smo z oranžno sliko histogramirali delež uspešnih napovedi konstante $K_{33}$.
+
+Vidimo, da v splošnem hh modeli bolje napovedujejo $K_{33}$ konstanto kot $K_{11}$ konstanto. Izgleda, da v tem načinu sidranja upogibna deformacija igra ključno ulogo pri urejanju direktorja. Obratno lahko rečemo za pp sidranje. V teh primerih lahko rečemo, da bolje napovemo $K_{11}$ konstanto. Izgleda kot, da pri tem načinu sidranja pahljačasta deformacija igra glavno ulogo pri urejanju direktorja. Za ph sidranje obe konstanti napovemo približno enako natančno.
+
+Opazimo lahko tudi razliko med modeli, ki so naučeni na zašumljenih in nezašumljenih podatkih. Vidimo lahko, da modeli, ki so naučeni na nezašumljenih podatkih bolje napovejo elastične konstante iz nezašumljenih podatkov kot zašumljenih. Te konstante napovejo bolje kot modeli, ki so naučeni na zašumljenih podatkih. A kot smo že omenili je robustnost mreže pomembna, saj so praktično vsi eksperimentalni podatki zašumljeni. Za bolj robustne se izkažejo modeli, ki so naučeni na zašumljenih podatkih. Ti modeli bolje napovejo elastične konstante iz zašumljenih podatkov.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/mreze5.png}
+    \caption{Povprečne funkcije izgube nevronske mreže, ki smo jo učili na podatkih z dvema elastičnima konstantama in različnimi sidranji. Prikazani sta funkcija izgube validacijske množice ter trening množice. Prav tako je s črtkano zeleno črto prikazano MAE odstopanje med napovedjo mreže ter testnimi podatki.}
+    \label{fig:mreze5}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/histogram.png}
+    \caption{Delež napovedi elastičnih konstant znotraj 5\% napake. Prikazane so natančnosti napovedi šestih različnih modelov. Model0-ij so modeli, ki smo jih naučili na nezašumljenih podatkih z ij sidranjem. Model100-ij so modeli, ki smo jih naučili na zašumljenih podatkih z ij sidranjem. Prikazane so natančnosti napovedi elastičnih konstant iz zašumljenih ter nezašumljenih testnih podatkov.}
+    \label{fig:histogram}
+\end{figure}
+
+\subsection{Eksperimentalni podatki}
+
+K nalogi so bili priloženi tudi eksperimentalni podatki. Ti imajo oh način sidranja. Za napovedovanje elastičnih konstant lahko uporabimo model0-ph ter model100-ph. Na sliki \ref{fig:hist1} lahko vidimo histogram napovedi elastičnih konstant $K_{11}$ ter $K_{33}$. Prav tako lahko vidimo povprečja porazdelitev ter z rdečo črto realne vrednosti konstant. Vidimo, da sta naša modela napovedala premajhne vrednosti. To je najverjetneje zaradi fizikalnih procesov, ki so med eksperimentom prisotni a v simulaciji niso. Kljub temu je model100 boljši. 
+
+Na sliki \ref{fig:hist2} lahko vidimo porazdelitev napovedi petih modelov obeh tipov. Znatno se je premaknilo le eno povprečje od štirih. Na srečo proti realni vrednosti elastične konstante. Vseeno so skoraj vse napovedane vrednosti prenizke.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/hist1.png}
+    \caption{Napoved elastične konstante iz eksperimentalnih podatkov. Za napoved sta bila uporabljena modela model0-ph ter model00-ph. Z vertikalnimi črtami so prikazana povprečja porazdelitev. Z rdečo barvo sta prikazani realni vrednosti elastičnih konstant.}
+    \label{fig:hist1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{imgs/hist2.png}
+    \caption{Napoved elastične konstante iz eksperimentalnih podatkov. Za napoved je bilo uporabljenih pet modelov vsakega tipa (0 ter 100). Z vertikalnimi črtami so prikazana povprečja porazdelitev. Z rdečo barvo sta prikazani realni vrednosti elastičnih konstant.}
+    \label{fig:hist2}
+\end{figure}
+
+\clearpage
+
+\section{Zaključek}
+
+V nalogi smo uporabljali nevronske mreže za napoved ene oz. dveh elastičnih konstant tekočih kristalov. Simulirali smo intenziteto žarka, ki prepotuje tekoč kristal, z znanima elastičnima konstantama, v katerem se direktorsko polje relaksira. Z velikim številom teh simulacij smo si pripravili učno množico za naše nevronske mreže. Med treningom smo na vhodu mreže podali simulirano intenziteto v odvisnosti od časa za izhod smo pa popravljali z znanimi elekstičnimi konstantami. Posikali smo optimalne hiperparametre za mrežo ter testirali kvaliteto napovedi. Na koncu smo elastični konstanti poskušali napovedati iz eksperimentalnih podatkov a smo žal dobili premajhne vrednosti. Sklepam, da zaradi fizikalnih procesov, ki v simulaciji niso upoštevani.
 
 \end{document}
