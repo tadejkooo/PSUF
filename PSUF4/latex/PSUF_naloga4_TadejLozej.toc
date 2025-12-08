@@ -4,3 +4,4 @@
 \contentsline {subsection}{\numberline {2.1}Napovedovanje z RNN mrežo}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Napoved z uporabo Luongovega mehanizma pozornosti}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Iskanje optimalnih hiperparametrov}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Perturbacije modela}{6}{subsection.2.4}%

@@ -168,4 +168,33 @@ Napako napovedi mreže z Luongovo pozornostjo v odvisnosti od časa lahko vidimo
 
 \subsection{Iskanje optimalnih hiperparametrov}
 
+Optimalne parametre bomo iskali pri modelih z implementirano Luongovo pozornostjo. Za modele z eno in dvema plastema v kodirniku ter dekodirniku bomo spreminjali dolžino vhodne sekvence ter velikost skritega stanja. Načrtovanje stopnje učenja in število epoch se mi je zdelo brezpredmetno spreminjati zaradi uporabljenih callbackov. Velikost batch-a in velikost učne množice pa nisem spreminjal.
+
+Na sliki \ref{fig:grid_search} lahko vidimo najmanjše vrednosti funkcije izgube na validacijski množici različnih modelov. Na $y$ osi so modeli razporejeni po velikosti skritega stanja. Na $x$ osi so modeli razporejeni po dolžini vhodne sekvence. Vsak kvadratek je razdeljen še na dva dela. V zgornjih delih so zapisani rezultati modelov z dvoslojnim kodirnikom ter dekodirnikom. V spodnjih delih so zapisani rezultati modelov z enoslojnim kodirnikom ter dekodirnikom.
+
+V prvi vrstici lahko vidimo, da z velikostjo skritega stanja 1 ne dosežemo prav veliko. Zanimivo je, da je vrednost izgube na prve tri decimalke enaka v vseh primerih. V poznejših delimalkah se razlikuje. Vidimo tudi, da so v splošnem modeli z enoslojnim kodirnikom ter dekodirnikom bolje napovedali prihodnost kot modeli z dvoslojnima. Napoved je boljša v primeru, ko imamo velikost skritega stanja 16 namesto 8. A se bolj kot ne poslabša, če dimenzijo povečamo na 32. Prav tako v splošnem vidimo izboljšavo napovedi, če povečamo dolžino vhodne sekvence.
+
+Glede na rezultate je najboljši model model z enoslojnim kodirnikom ter dekodirnikom ter z velikostjo skritega stanja 16 in dolžino vhodne sekvence 4. Ta je celo boljši od prejšnjega modela na sliki \ref{fig:Luong_loss}, ki je imel dolžino vhodne sekvence 5.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\linewidth]{imgs/grid_search.png}
+    \caption{Minimalne vrednosti validacijske funkcije izgube za modele z različno velikostjo skritega stanja ter dolžino vhodne sekvence. V vseh različnih kombinacijah so prikazani rezultati modelov s enoslojnim (spodni del kvadratkov) ter dvoslojnim (zgornji del kvadratkov) kodirnikom ter dekodirnikom.}
+    \label{fig:grid_search}
+\end{figure}
+
+\subsection{Perturbacije modela}
+
+Uteži naučenega modela najverjetneje niso optimalne. Zelo verjetno se nahajamo blizu minimuma vendar ne nujno prav v njem. Zato lahko naključno perturbiramo uteži modela z Gaussovskim šumom in pogledamo, če slučajno pridemo bližje minimumu in imamo posledično boljšo napoved. Prav tako lahko z ansamblom naključno perturbiranih modelov napovemo v kakšnem tipu minimuma smo. Lahko smo v zelo ozkem ali širokem minimumu.
+
+Na sliki \ref{fig:hist_perturbed} lahko vidimo
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\linewidth]{imgs/hist_perturbed.png}
+    \caption{Napaka napovedi mreže z Luongovo pozornostjo v odvisnosti od časa definirana z enačbo \ref{eq:err}. Z črtkanimi črtami različnih barv so prikazane napake posameznih koordinat. S sivo barvo je prikazana napaka napovedi RNN mreže za primerjavo.}
+    \label{fig:hist_perturbed}
+\end{figure}
+
+
 \end{document}
