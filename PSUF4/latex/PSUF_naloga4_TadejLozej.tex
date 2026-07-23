@@ -187,7 +187,7 @@ Glede na rezultate je najboljši model model z enoslojnim kodirnikom ter dekodir
 
 Uteži naučenega modela najverjetneje niso optimalne. Zelo verjetno se nahajamo blizu minimuma vendar ne nujno prav v njem. Zato lahko naključno perturbiramo uteži modela z Gaussovskim šumom in pogledamo, če slučajno pridemo bližje minimumu in imamo posledično boljšo napoved. Prav tako lahko z ansamblom naključno perturbiranih modelov napovemo v kakšnem tipu minimuma smo. Lahko smo v zelo ozkem ali širokem minimumu.
 
-Na sliki \ref{fig:hist_perturbed} lahko vidimo
+Na sliki \ref{fig:hist_perturbed} lahko vidimo histograme napovedi perturbiranih modelov. Perturbirali smo uteži najboljšega modela, ki smo ga dobili v podpoglavju 2.3. Uteži smo perturbirali z Gaussovskim šumom različnih standardnih deviaciji (STD). Uteži smo perturbirali s štirimi različnimi STD-ji. Natančnost napovedi smo pridobili s funkcijo \texttt{model.evaluate}. Evalvirali smo na validacijski množici. Z rdeču črtkano črto je prikazana evalvacija originalnega modela. Vidimo, da če perturbiramo uteži z standardno deviacijo 0.1 dobimo zelo slabe modele. To je očitno prevelika perturbacija. Pri manjših STD-jih pa dobimo tudi boljše modele od originalnega modela. Pri STD 0.01 jih je vseeno precej slabših. Pri manjših standardnih deviacijah pa so evalvacije modelov lepo razporejene okrog originalnega modela. 
 
 \begin{figure}[h!]
     \centering
@@ -195,6 +195,8 @@ Na sliki \ref{fig:hist_perturbed} lahko vidimo
     \caption{Napaka napovedi mreže z Luongovo pozornostjo v odvisnosti od časa definirana z enačbo \ref{eq:err}. Z črtkanimi črtami različnih barv so prikazane napake posameznih koordinat. S sivo barvo je prikazana napaka napovedi RNN mreže za primerjavo.}
     \label{fig:hist_perturbed}
 \end{figure}
+
+
 
 
 \end{document}

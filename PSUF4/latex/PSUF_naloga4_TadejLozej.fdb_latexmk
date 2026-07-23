@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1765226708.16091 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF4/latex/PSUF_naloga4_TadejLozej.tex" "PSUF_naloga4_TadejLozej.pdf" "PSUF_naloga4_TadejLozej" 1765226710.32851 0
+["pdflatex"] 1765398577.79673 "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF4/latex/PSUF_naloga4_TadejLozej.tex" "PSUF_naloga4_TadejLozej.pdf" "PSUF_naloga4_TadejLozej" 1765398580.57288 0
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -80,11 +80,11 @@
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/tadej/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "PSUF_naloga4_TadejLozej.aux" 1765226710 5963 ebbd468f0c7f9666926f12852b3c6906 "pdflatex"
-  "PSUF_naloga4_TadejLozej.out" 1765226710 1111 72935a09e2a786bfb7b73d4414dd4782 "pdflatex"
-  "PSUF_naloga4_TadejLozej.tex" 1765226707 15441 a7adf5da81bfaaa403f81d6bc6a486e1 ""
-  "PSUF_naloga4_TadejLozej.toc" 1765226710 558 ee2c6c540e264bdf65f39f7328125b17 "pdflatex"
-  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF4/latex/PSUF_naloga4_TadejLozej.tex" 1765226707 15441 a7adf5da81bfaaa403f81d6bc6a486e1 ""
+  "PSUF_naloga4_TadejLozej.aux" 1765398580 5963 ebbd468f0c7f9666926f12852b3c6906 "pdflatex"
+  "PSUF_naloga4_TadejLozej.out" 1765398580 1111 72935a09e2a786bfb7b73d4414dd4782 "pdflatex"
+  "PSUF_naloga4_TadejLozej.tex" 1765398576 16241 cc05162b5f6b463186e836fe592d578d ""
+  "PSUF_naloga4_TadejLozej.toc" 1765398580 558 ee2c6c540e264bdf65f39f7328125b17 "pdflatex"
+  "c:/Users/tadej/Desktop/STUDIJ/mag-2.letnik/PSUF/PSUF4/latex/PSUF_naloga4_TadejLozej.tex" 1765398576 16241 cc05162b5f6b463186e836fe592d578d ""
   "imgs/Lorentz.png" 1765039547 254393 2b9730343c13e5386eac9b3d8c337505 ""
   "imgs/Luong_err.png" 1765019943 81600 bfb3154638c75d9d682f99c9fa91f669 ""
   "imgs/Luong_loss.png" 1765019914 39483 18bef826175c6573a9af2b8083fc9f95 ""
