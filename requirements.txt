@@ -1,5 +1,5 @@
 # numeric
-numpy>=2.1.0
+numpy==1.26.4
 scipy>=1.14.1
 uncertainties>=3.2.2
 
@@ -21,6 +21,9 @@ jupyterlab>=4.2.5
 
 # progress bar
 tqdm>=4.66.5
+
+# jet clustering
+pyjet==1.9.0
 
 # other
 requests>=2.28.1
