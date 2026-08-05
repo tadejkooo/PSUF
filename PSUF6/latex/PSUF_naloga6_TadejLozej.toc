@@ -1,0 +1,9 @@
+\babel@toc {slovene}{}\relax 
+\contentsline {section}{\numberline {1}Uvod}{1}{section.1}%
+\contentsline {section}{\numberline {2}K-means na dveh Gaussovih porazdelitvah}{1}{section.2}%
+\contentsline {section}{\numberline {3}K means na hadronskih curkih}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Infrardeča varnost}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Algoritem hierarhičnega gručenja}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Infrardeča varnost ter čas izvajanja}{6}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Rekonstrukcija mase Higgsovega bozona}{7}{section.5}%
+\contentsline {section}{\numberline {6}Zaključek}{9}{section.6}%
